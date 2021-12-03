@@ -1,10 +1,10 @@
-ay_inputs_aight = []
+inputs = []
 with open('Q3_Input.txt') as t:
     for line in t:
-        ay_inputs_aight.append(line.strip('\n'))
+        inputs.append(line.strip('\n'))
 
-yo_directions_bruv = [s.split(" ")[0] for s in ay_inputs_aight]
-yo_distances_bruv = [int(s.split(" ")[1]) for s in ay_inputs_aight]
+yo_directions_bruv = [s.split(" ")[0] for s in inputs]
+yo_distances_bruv = [int(s.split(" ")[1]) for s in inputs]
 
 fancy_directions_mate = zip(yo_directions_bruv , yo_distances_bruv)
 
